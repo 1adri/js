@@ -1,0 +1,37 @@
+.bod {
+    background-color: black;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.center2 {
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.robux1 {
+    font-size:300%;
+    color: white;
+    text-align: center;
+    position:relative;
+    top: 300px;
+    
+}
+
+.scam {
+    width: 200px;
+    height: 100px;
+    background-color: grey;
+    border: 1mm grey;
+    font-size: xx-large;
+}

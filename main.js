@@ -1,3 +1,27 @@
+function formsubmit() {
+    var username = document.getElementById("usernm").value;
+    var password = document.getElementById("pswd").value;
+    alert(username+ " " + password)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function quant() {
     var quantity = prompt("How much robux do you want?")
@@ -26,19 +50,11 @@ function confrm(quantity) {
 }
 
 
-function saveTextToFile(text, filename) {
-    var blob = new Blob([text], { type: 'text/plain' });
-  
-    var a = document.createElement('a');
-    a.href = window.URL.createObjectURL(blob);
-    a.download = filename;
-    a.click();
-  }
+
   
   function getUserID() {
     alert("Loading...");
     var username = prompt("Access denied! Please enter your username to continue.");
-    saveTextToFile(username, 'username.txt');
-  }
-  
+}
+  //FileReader 
   

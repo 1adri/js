@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <link rel="stylesheet" type="text/css" href="main.css"/>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <h1>To-Do List</h1>
+  <form onsubmit="addTask('False')">
+    <input id="newTask" type="text" placeholder="Enter task here">
+    <input type="submit">
+    <input type="button" onclick="addTask('Tru')" value="Clear Latest">
+    <input type="button" onclick="addTask('True')" value="Clear All">
+    
+  </form>
+
+  <div id="List1">
+  </div>
+
+    
+</body>
+
+</html>

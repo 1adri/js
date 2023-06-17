@@ -1,0 +1,17 @@
+.back {
+    background-color: red;
+}
+
+.black {
+    background-color: black;
+    color: white;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Adjust as needed */
+    margin: 0;
+}

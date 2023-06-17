@@ -2,31 +2,28 @@ var count = 0
 function addTask(del) {
     event.preventDefault();
     var text = document.getElementById("newTask").value;
-    //alert(del)
-    if (del=="False") {
-        if (!text) {
-            alert("Please enter a task!");
-
-        } else {
-            count++
-            var para = document.createElement("p");
-            para.innerText = text;
-            let text2 = document.getElementById("newTask");
-            text2.value = ""; // Clear the value of the text field
-
-            para.style.border = "2px solid blue"; 
-            para.style.padding = "3px"; 
-            para.style.margin="5px";
-            para.style.display="inline-block";
-
-            document.body.appendChild(para);
-        }
-} else if(del=="Tru") {
-    clearLatest()
-} else {
-    clearAll(count)
-}
-}
+    if (del == "False") {
+      if (!text) {
+        alert("Please enter a task!");
+      } else {
+        count++;
+        var para = document.createElement("p");
+        para.innerText = text;
+        para.classList.add("task"); // Add the "task" class to the created <p> element
+  
+        let text2 = document.getElementById("newTask");
+        text2.value = ""; // Clear the value of the text field
+  
+        var taskContainer = document.getElementById("taskContainer");
+        taskContainer.appendChild(para); // Append the task to the taskContainer
+      }
+    } else if (del == "Tru") {
+      clearLatest();
+    } else {
+      clearAll(count);
+    }
+  }
+  
 function clearLatest() {
     let tasks = document.getElementsByTagName("p");
     let i = document.getElementsByTagName("p").length - 1

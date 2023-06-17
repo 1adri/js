@@ -6,20 +6,17 @@
   <script src="main.js"></script>
 </head>
 
-<body>
-  <h1>To-Do List</h1>
-  <form onsubmit="addTask('False')">
-    <input id="newTask" type="text" placeholder="Enter task here">
-    <input type="submit">
-    <input type="button" onclick="addTask('Tru')" value="Clear Latest">
-    <input type="button" onclick="addTask('True')" value="Clear All">
-    
-  </form>
-
-  <div id="List1">
+<body class="center">
+  <div class="container">
+    <h1>To-Do List</h1>
+    <form onsubmit="addTask('False')">
+      <input id="newTask" type="text" placeholder="Enter task here">
+      <input type="submit">
+      <input type="button" onclick="addTask('Tru')" value="Clear Latest">
+      <input type="button" onclick="addTask('True')" value="Clear All">
+    </form>
+    <div class="task-container" id="taskContainer"></div>
   </div>
-
-    
 </body>
 
 </html>
